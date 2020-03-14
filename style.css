@@ -1,0 +1,19 @@
+div.content {
+    width: 80%;
+    margin: auto;
+}
+
+div.title {
+    text-align: center;
+}
+
+td.data,
+th.title {
+    padding: 0px 10px;
+    width: 10%;
+    text-align: center;
+}
+
+th.title {
+    background-color: cornflowerblue;
+}
