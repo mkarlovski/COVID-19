@@ -16,12 +16,31 @@
 #headerTitle {
     font-size: 24px;
     font-weight: bold;
+    color: white;
 }
 
 div.content,
 div.overview_content {
     width: 80%;
     margin: 0 auto;
+}
+
+#aboutUs_btn {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    opacity: 70%;
+}
+
+#AboutUs {
+    display: none;
+}
+
+#AboutUs_content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 div.title {

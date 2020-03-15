@@ -69,7 +69,7 @@
 
 
 var toggleAboutUs = function() {
-    var forms = document.getElementById("AboutUs_content")
+    var forms = document.getElementById("AboutUs")
     if (forms.style.display == "block") {
         forms.style.display = "none";
     } else {
