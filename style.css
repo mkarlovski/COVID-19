@@ -35,12 +35,23 @@ div.overview_content {
 
 #AboutUs {
     display: none;
+    border: 2px solid black;
+    position: absolute;
+    margin-top: 50px;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: cadetblue;
 }
 
 #AboutUs_content {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     padding: 15px;
+    margin: 0 auto;
 }
 
 div.title {
