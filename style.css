@@ -13,11 +13,11 @@
     background-image: url("./images/coronavirus_cover_colour_change_1024.jpg");
 }
 
-#headerTitle {
+/* #headerTitle {
     font-size: 24px;
     font-weight: bold;
     color: black;
-}
+} */
 
 div.content,
 div.overview_content {
