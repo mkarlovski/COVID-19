@@ -10,6 +10,7 @@
     align-items: center;
     border-bottom: 1px solid black;
     padding: 20px;
+    background-image: url("./images/coronavirus_cover_colour_change_1024.jpg");
 }
 
 #headerTitle {
