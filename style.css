@@ -1,6 +1,26 @@
-div.content {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+#headerTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div.content,
+div.overview_content {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 div.title {
