@@ -105,3 +105,6 @@ th.title {
     padding:5%;
     font-weight:bold;
 }
+p {
+    text-align: justify;
+}
