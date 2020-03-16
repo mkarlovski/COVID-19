@@ -58,7 +58,13 @@ div.overview_content {
 #AboutCorona{
     padding-top: 20px;
 }
-#Simptoms{
+#Symptoms{
+    padding-top: 20px;
+}
+#symptomsImg{
+    padding-left: 130px;
+}
+#Prevention{
     padding-top: 20px;
 }
 
