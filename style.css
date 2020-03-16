@@ -73,7 +73,9 @@ div.overview_content {
 #Prevention{
     padding-top: 20px;
 }
-
+#Suggestions{
+    padding-top: 20px;
+}
 div.title {
     text-align: center;
 }
