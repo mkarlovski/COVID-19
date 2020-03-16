@@ -61,6 +61,8 @@ div.overview_content {
     margin: 0 auto;
     text-shadow: 2px 2px 5px green, 0 0 10px red;
     box-shadow: 10px 10px 5px grey;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 #AboutCorona {
     padding-top: 20px;
