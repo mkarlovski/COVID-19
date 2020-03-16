@@ -1,3 +1,4 @@
+var filterMK = [];
 (function() {
     axios.get('https://covid-ca.azurewebsites.net/api/covid/countries', {
         headers: {
@@ -31,6 +32,37 @@
 
         let content = document.getElementById('content');
         content.innerHTML = contentHtml;
+
+        filterMK = data.filter(function(item) {
+            return item.country === "North Macedonia"
+        })
+        let contentHtml2 = '<div class="title"><h2>North Macedonia</h2></div>' +
+            '<table><thead><tr>' +
+            '<th class="title">Country</th>' +
+            '<th class="title">Cases</th>' +
+            '<th class="title">Today Cases</th>' +
+            '<th class="title">Deaths</th>' +
+            '<th class="title">Today Deaths</th>' +
+            '<th class="title">Recovered</th>' +
+            '<th class="title">Critical</th>' +
+            '</tr></thead><tbody>';
+
+        contentHtml2 += '<tr>' +
+            '<td class="data">' + filterMK[0].country + '</td>' +
+            '<td class="data">' + filterMK[0].cases + '</td>' +
+            '<td class="data">' + filterMK[0].todayCases + '</td>' +
+            '<td class="data">' + filterMK[0].deaths + '</td>' +
+            '<td class="data">' + filterMK[0].todayDeaths + '</td>' +
+            '<td class="data">' + filterMK[0].recovered + '</td>' +
+            '<td class="data">' + filterMK[0].critical + '</td>' +
+            '</tr>';
+
+        contentHtml2 += '</tbody></table>';
+        let contentMK = document.getElementById('contentMK');
+        contentMK.innerHTML = contentHtml2;
+
+
+
     }).catch(error => {
         console.log(error);
     })
@@ -76,3 +108,51 @@ var toggleAboutUs = function() {
         forms.style.display = "block";
     }
 };
+
+<<<<<<< HEAD
+
+
+
+// (function() {
+//     axios.get('https://covid-ca.azurewebsites.net/api/covid/countries', {
+//         headers: {
+//             'Content-Type': 'application/json',
+//             'Accept': 'application/json'
+//         }
+//     }).then(response => {
+//         let data = JSON.parse(response.data);
+
+//         filterMK = data.filter(function(item) {
+//             return item.country === "North Macedonia"
+//         })
+//         let contentHtml2 = '<div class="title"><h2>North Macedonia</h2></div>' +
+//             '<table><thead><tr>' +
+//             '<th class="title">Country</th>' +
+//             '<th class="title">Cases</th>' +
+//             '<th class="title">Today Cases</th>' +
+//             '<th class="title">Deaths</th>' +
+//             '<th class="title">Today Deaths</th>' +
+//             '<th class="title">Recovered</th>' +
+//             '<th class="title">Critical</th>' +
+//             '</tr></thead><tbody>';
+
+//         contentHtml2 += '<tr>' +
+//             '<td class="data">' + filterMK[0].country + '</td>' +
+//             '<td class="data">' + filterMK[0].cases + '</td>' +
+//             '<td class="data">' + filterMK[0].todayCases + '</td>' +
+//             '<td class="data">' + filterMK[0].deaths + '</td>' +
+//             '<td class="data">' + filterMK[0].todayDeaths + '</td>' +
+//             '<td class="data">' + filterMK[0].recovered + '</td>' +
+//             '<td class="data">' + filterMK[0].critical + '</td>' +
+//             '</tr>';
+
+//         contentHtml2 += '</tbody></table>';
+//         let content = document.getElementById('content');
+//         content.innerHTML = contentHtml2;
+
+//     }).catch(error => {
+//         console.log(error);
+//     })
+// })();
+=======
+>>>>>>> 4abe790c30bc750bef8f3dd23e2fef3195436d68
