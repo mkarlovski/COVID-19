@@ -98,3 +98,10 @@ th.title {
 .nav-link:hover {
     color: olive;
 }
+
+
+.test {
+    margin: 0 auto;
+    padding:5%;
+    font-weight:bold;
+}
