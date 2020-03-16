@@ -30,10 +30,11 @@ div.overview_content {
     border-radius: 5px;
     color: white;
     background-color: black;
-    opacity: 70%;
+    opacity: 70;
 }
-#myTab{
-    color:cornflowerblue
+#myTab {
+    color: gray;
+    box-shadow: 5px 5px 2px;
 }
 #AboutUs {
     /*display: none;
@@ -87,4 +88,11 @@ th.title {
 
 th.title {
     background-color: cornflowerblue;
+}
+
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: olive;
 }
