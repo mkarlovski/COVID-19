@@ -1,4 +1,6 @@
 var filterMK = [];
+var data = [];
+var data2 = [];
 (function() {
     axios.get('https://covid-ca.azurewebsites.net/api/covid/countries', {
         headers: {
@@ -6,7 +8,7 @@ var filterMK = [];
             'Accept': 'application/json'
         }
     }).then(response => {
-        let data = JSON.parse(response.data);
+        data = JSON.parse(response.data);
         let contentHtml = '<div class="title"><h2>Covid-19</h2></div>' +
             '<table><thead><tr>' +
             '<th class="title">Country</th>' +
@@ -32,7 +34,7 @@ var filterMK = [];
 
         let content = document.getElementById('content');
         content.innerHTML = contentHtml;
-
+        // ----------   filter za MK--------------------------
         filterMK = data.filter(function(item) {
             return item.country === "North Macedonia"
         })
@@ -60,7 +62,50 @@ var filterMK = [];
         contentHtml2 += '</tbody></table>';
         let contentMK = document.getElementById('contentMK');
         contentMK.innerHTML = contentHtml2;
+        //------TOP FIVE TODAY CASES
 
+        var todayCasesDesc = data.sort(function(a, b) {
+            return b.todayCases - a.todayCases;
+        });
+        var top5Today = todayCasesDesc.slice(0, 5);
+
+        let contentHtml3 = '<div class="title"><h2>Top 5 Cases Today</h2></div>' +
+            '<table><thead><tr>' +
+            '<th class="title">Country</th>' +
+            '<th class="title">Today Cases</th>' +
+            '</tr></thead><tbody>';
+        top5Today.forEach(element => {
+            contentHtml3 += '<tr>' +
+                '<td class="data">' + element.country + '</td>' +
+                '<td class="data">' + element.todayCases + '</td>' +
+                '</tr>';
+        });
+        contentHtml3 += '</tbody></table>';
+
+        let contentTop5 = document.getElementById('top5Today');
+        contentTop5.innerHTML = contentHtml3;
+        //-----TOP Five today deaths
+
+        var todayDeathDesc = data.sort(function(a, b) {
+            return b.todayDeaths - a.todayDeaths;
+        });
+        var top5TodayDeaths = todayDeathDesc.slice(0, 5);
+
+        let contentHtml4 = '<div class="title"><h2>Top 5 today deaths</h2></div>' +
+            '<table><thead><tr>' +
+            '<th class="title">Country</th>' +
+            '<th class="title">Today Deaths</th>' +
+            '</tr></thead><tbody>';
+        top5TodayDeaths.forEach(element => {
+            contentHtml4 += '<tr>' +
+                '<td class="data">' + element.country + '</td>' +
+                '<td class="data">' + element.todayDeaths + '</td>' +
+                '</tr>';
+        });
+        contentHtml4 += '</tbody></table>';
+
+        let contentTop5Deaths = document.getElementById('top5TodayDeath');
+        contentTop5Deaths.innerHTML = contentHtml4;
 
 
     }).catch(error => {
@@ -76,7 +121,7 @@ var filterMK = [];
             'Accept': 'application/json'
         }
     }).then(response => {
-        let data = JSON.parse(response.data);
+        data2 = JSON.parse(response.data);
         let contentHtml = '<div class="title"><h2>OVERVIEW</h2></div>' +
             '<table><thead><tr>' +
             '<th class="title">Cases</th>' +
@@ -85,9 +130,9 @@ var filterMK = [];
             '</tr></thead><tbody>';
 
         contentHtml += '<tr>' +
-            '<td class="data">' + data.cases + '</td>' +
-            '<td class="data">' + data.deaths + '</td>' +
-            '<td class="data">' + data.recovered + '</td>' +
+            '<td class="data">' + data2.cases + '</td>' +
+            '<td class="data">' + data2.deaths + '</td>' +
+            '<td class="data">' + data2.recovered + '</td>' +
             '</tr>';
 
         contentHtml += '</tbody></table>';
@@ -100,6 +145,8 @@ var filterMK = [];
 })();
 
 
+
+
 var toggleAboutUs = function() {
     var forms = document.getElementById("AboutUs")
     if (forms.style.display == "block") {
@@ -108,4 +155,3 @@ var toggleAboutUs = function() {
         forms.style.display = "block";
     }
 };
-
