@@ -36,29 +36,9 @@ div.overview_content {
     color: gray;
     box-shadow: 5px 5px 2px;
 }
-#AboutUs {
-    /*display: none;
-    border: 2px solid black;
-    position: absolute;
-    margin-top: 50px;
-    top: 30%;
-    left: 10%;
-    right: 10%;
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    background-color: cadetblue;*/
-
-    display: none;
-    width: 70%;
-    margin: 0 auto;
-}
 
 #AboutUs_content {
-    width: 90%;
-    margin: 0 auto;
     padding: 15px;
-    margin: 0 auto;
     text-shadow: 2px 2px 5px green, 0 0 10px red;
     box-shadow: 10px 10px 5px grey;
     margin-bottom: 30px;
