@@ -146,12 +146,11 @@ var data2 = [];
 
 
 
-
-var toggleAboutUs = function() {
-    var forms = document.getElementById("AboutUs")
-    if (forms.style.display == "block") {
-        forms.style.display = "none";
+function toggleAboutUs() {
+    var x = document.getElementById("AboutUs_content");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
     } else {
-        forms.style.display = "block";
+        x.className = x.className.replace(" w3-show", "");
     }
-};
+}
