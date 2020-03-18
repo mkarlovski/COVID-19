@@ -10,7 +10,7 @@
     align-items: center;
     border-bottom: 1px solid black;
     padding: 20px;
-    background-image:  url("./images/coronavirus_cover_colour_change_1024.jpg");
+    background-image: url("./images/shutterstock_264980540-1024x426-Copy.webp");
 }
 
 #headerTitle {
@@ -111,3 +111,20 @@ p {
     width:100%;
     height:50%;
 }
+body {
+    background-image: url("./images/posledenpat.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#Statistic,
+#Prevention {
+    background-image: url("./images/22.png");
+}
+#Suggestions,
+#Symptoms,
+#AboutCorona {
+    background-image: url("./images/depositphotos_173023952-stock-photo-medical-background-healthcare-icon-medical.jpg");
+}*/
