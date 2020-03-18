@@ -144,10 +144,8 @@ var data2 = [];
     })
 })();
 
-function checkPopUpsClick(clickedId) {
-    if (clickedId == document.getElementById("myTabContent")) {
-        hideAll();
-    }
+function checkPopUpsClick() {
+    hideAboutUs();
 }
 
 function toggle(buttonId) {
@@ -156,17 +154,17 @@ function toggle(buttonId) {
             toggleAboutUs();
             break;
 
-        case "cardWorld_btn":
-            toggleCardTitle();
-            break;
-        case "cardTop5cases_btn":
-            break;
-        case "cardTop5Deaths_btn":
-            break;
-        case "cardMK_btn":
-            break:
-        case "cardOverview_btn":
-            break;
+        //case "cardWorld_btn":
+        //    toggleCardTitle();
+        //    break;
+        //case "cardTop5cases_btn":
+        //    break;
+        //case "cardTop5Deaths_btn":
+        //    break;
+        //case "cardMK_btn":
+        //    break:
+        //case "cardOverview_btn":
+        //    break;
 
 
         default:
