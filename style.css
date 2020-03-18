@@ -39,7 +39,7 @@ div.overview_content {
 
 #AboutUs_content {
     padding: 15px;
-    text-shadow: 2px 2px 5px green, 0 0 10px red;
+    text-shadow: 2px 2px 5px blue, 0 0 10px white;
     box-shadow: 10px 10px 5px grey;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -80,9 +80,9 @@ th.title {
 .nav-link {
     color: black;
 }
-.nav-link:hover {
-    color: olive;
-}
+    .nav-link:hover {
+        text-shadow: 2px 2px 5px blue, 0 0 10px white;
+    }
 
 
 .test {
