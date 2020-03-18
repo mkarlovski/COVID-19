@@ -144,13 +144,56 @@ var data2 = [];
     })
 })();
 
+function checkPopUpsClick(clickedId) {
+    if (clickedId == document.getElementById("myTabContent")) {
+        hideAll();
+    }
+}
 
+function toggle(buttonId) {
+    switch (buttonId) {
+        case "aboutUs_btn":
+            toggleAboutUs();
+            break;
+
+        case "cardWorld_btn":
+            toggleCardTitle();
+            break;
+        case "cardTop5cases_btn":
+            break;
+        case "cardTop5Deaths_btn":
+            break;
+        case "cardMK_btn":
+            break:
+        case "cardOverview_btn":
+            break;
+
+
+        default:
+            break;
+    }
+}
 
 function toggleAboutUs() {
     var x = document.getElementById("AboutUs_content");
     if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
+        showAboutUs();
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        hideAboutUs();
     }
+}
+
+function showAboutUs() {
+    var x = document.getElementById("AboutUs_content");
+    x.className += " w3-show";
+}
+
+function hideAboutUs() {
+    var x = document.getElementById("AboutUs_content");
+    x.className = x.className.replace(" w3-show", "");
+}
+
+function hideAll() {
+    var x = document.getElementByClassName("classname");
+    x.className = x.className.replace(" w3-show", "");
 }
