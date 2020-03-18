@@ -16,7 +16,7 @@
 
     <div id="header">
         <div id="headerTitle">COVID-19</div>
-        <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
+        <button id="aboutUs_btn" onclick="toggle(this.id)">За нас</button>
     </div>
     <div>
         <div id="AboutUs_content" class="w3-animate-zoom">
@@ -44,7 +44,7 @@
             <a class="nav-link" id="tab" data-toggle="tab" href="#Statistic" role="tab" aria-controls="Statistic" aria-selected="false">Статистика</a>
         </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
+    <div class="tab-content" id="myTabContent" onclick="checkPopUpsClick(this.id)">
         <div class="tab-pane fade show active" id="AboutCorona" role="tabpanel" aria-labelledby="AboutCorona">
             <div class="container">
                 <div class="row">
