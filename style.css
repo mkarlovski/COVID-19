@@ -63,6 +63,9 @@ div.overview_content {
     box-shadow: 10px 10px 5px grey;
     margin-bottom: 30px;
     margin-top: 10px;
+    display: none;
+    width: 70%;
+    margin: 0 auto;
 }
 #AboutCorona {
     padding-top: 20px;
