@@ -59,6 +59,14 @@ div.overview_content {
     padding-top: 20px;
 }
 
+.test-img {
+    margin: 0 auto;
+}
+
+.img-preventions {
+    border-radius: 50%;
+}
+
 div.title {
     text-align: center;
 }
