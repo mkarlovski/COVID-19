@@ -115,9 +115,10 @@ body {
 
 #myTabContent {}
 
-
+.ContactsContect {
+    text-align: center
+}
 /*CARDS-------------------------------------------------------------*/
-
 .card-deck {
     margin: 15px;
     justify-content: space-around;
