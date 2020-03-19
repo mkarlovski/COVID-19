@@ -25,10 +25,9 @@ div.overview_content {
     margin: 0 auto;
 }
 
-#A {
+#A{
     margin: 10px;
 }
-
 #aboutUs_btn {
     padding: 5px;
     border-radius: 5px;
@@ -36,7 +35,6 @@ div.overview_content {
     background-color: black;
     opacity: 70;
 }
-
 #myTab {
     color: gray;
     box-shadow: 5px 5px 2px;
@@ -51,20 +49,15 @@ div.overview_content {
     width: 70%;
     margin: 0 auto;
 }
-
 #AboutCorona,
 #Symptoms,
 #Prevention,
-#Suggestions {
+#Suggestions{
     padding-top: 20px;
 }
 
-.test-img {
-    margin: 0 auto;
-}
-
-.img-preventions {
-    border-radius: 50%;
+#symptomsImg{
+    padding-left: 130px;
 }
 
 div.title {
@@ -86,12 +79,12 @@ th.title {
     text-shadow: 2px 2px 5px blue, 0 0 10px white;
 }
 
+
 .test {
     margin: 0 auto;
-    padding: 5%;
-    font-weight: bold;
+    padding:5%;
+    font-weight:bold;
 }
-
 p {
     text-align: justify;
 }
@@ -103,41 +96,35 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 /*CARDS-------------------------------------------------------------*/
-
 .card-deck {
     margin: 15px;
     justify-content: space-around;
 }
-
 .card {
     border: solid black 1px;
     padding: 2px;
 }
-
 .card-footer {
     justify-content: center;
     margin: 0 auto;
-    background-color: white;
+    background-color:white;
 }
-
-.card-img-top {
-    width: 100%;
-    height: 50%;
+.card-img-top{
+    width:100%;
+    height:50%;
 }
-
-#information_footer {
+/*FOOTER------------------------------------------------------------*/
+#information_footer{
     padding-top: 20px;
 }
-
-#info_title_footer {
+#info_title_footer{
     justify-content: center;
     margin: 0 auto;
 }
-
-#info_footer {
+#info_footer{
     justify-content: center;
     margin: 0 auto;
+}
+body {
 }
