@@ -114,5 +114,16 @@ p {
     width:100%;
     height:50%;
 }
+#information_footer{
+    padding-top: 20px;
+}
+#info_title_footer{
+    justify-content: center;
+    margin: 0 auto;
+}
+#info_footer{
+    justify-content: center;
+    margin: 0 auto;
+}
 body {
 }
