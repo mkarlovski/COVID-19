@@ -88,6 +88,14 @@ th.title {
 p {
     text-align: justify;
 }
+
+#myTabContent {
+    background-image: url("./images/posledenpat.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*CARDS-------------------------------------------------------------*/
 .card-deck {
     margin: 15px;
@@ -107,9 +115,4 @@ p {
     height:50%;
 }
 body {
-    background-image: url("./images/posledenpat.png");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
