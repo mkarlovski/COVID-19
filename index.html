@@ -30,7 +30,9 @@
 
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="tab" data-toggle="tab" href="#AboutCorona" role="tab" aria-controls="AboutCorona" aria-selected="true">Што е Корона?</a>
+            <a class="nav-link active" id="tab" data-toggle="tab" href="#Statistic" role="tab" aria-controls="Statistic" aria-selected="true">Статистика</a>
+        </li><li class="nav-item">
+            <a class="nav-link" id="tab" data-toggle="tab" href="#AboutCorona" role="tab" aria-controls="AboutCorona" aria-selected="false">Што е Корона?</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="tab" data-toggle="tab" href="#Symptoms" role="tab" aria-controls="Symptoms" aria-selected="false">Симптоми</a>
@@ -41,15 +43,16 @@
         <li class="nav-item">
             <a class="nav-link" id="tab" data-toggle="tab" href="#Suggestions" role="tab" aria-controls="Suggestions" aria-selected="false">Препораки</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" id="tab" data-toggle="tab" href="#Statistic" role="tab" aria-controls="Statistic" aria-selected="false">Статистика</a>
-        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link active" id="tab" data-toggle="tab" href="#AboutCorona" role="tab" aria-controls="AboutCorona" aria-selected="true">Што е Корона?</a>
+        </li> -->
+        
         <li class="nav-item">
             <a class="nav-link" id="tab" data-toggle="tab" href="#Concats" role="tab" aria-controls="Concats" aria-selected="false">Контакти</a>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent" onclick="checkPopUpsClick()">
-        <div class="tab-pane fade show active" id="AboutCorona" role="tabpanel" aria-labelledby="AboutCorona">
+        <div class="tab-pane fade " id="AboutCorona" role="tabpanel" aria-labelledby="AboutCorona">
             <div class="container">
                 <div class="row">
                     <div class="col" style="border-left: solid black 2px; border-right: solid black 2px;">
@@ -135,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="Suggestions" role="tabpanel" aria-labelledby="Suggestions">
+        <div class="tab-pane fade " id="Suggestions" role="tabpanel" aria-labelledby="Suggestions">
             <div class="container">
                 <div class="row">
                     <div class="col" style="border-left: solid black 2px; border-right: solid black 2px;">
@@ -157,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="Statistic" role="tabpanel" aria-labelledby="Statistic">
+        <div class="tab-pane fade show active" id="Statistic" role="tabpanel" aria-labelledby="Statistic">
             <div class="container">
                 <div class="row">
                     <div class="content-wrapper">
