@@ -18,7 +18,7 @@
         <div id="headerTitle">COVID-19</div>
         <button id="aboutUs_btn" onclick="toggle(this.id)">За нас</button>
     </div>
-    <div>
+    <div id="A">
         <div id="AboutUs_content" class="w3-animate-zoom">
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
@@ -44,7 +44,7 @@
             <a class="nav-link" id="tab" data-toggle="tab" href="#Statistic" role="tab" aria-controls="Statistic" aria-selected="false">Статистика</a>
         </li>
     </ul>
-    <div class="tab-content" id="myTabContent" onclick="checkPopUpsClick(this.id)">
+    <div class="tab-content" id="myTabContent" onclick="checkPopUpsClick()">
         <div class="tab-pane fade show active" id="AboutCorona" role="tabpanel" aria-labelledby="AboutCorona">
             <div class="container">
                 <div class="row">
@@ -147,7 +147,7 @@
                             <br> Доколку треба да патувате во некоја од земјите кои се на листата на земји заведена со висок или среден степен на ризик, се препорачува да го одложите вашето патување, освен доколку станува збор за патување поврзано со
                             медицински цели.
                             <br> Доколку патувате од некоја од овие земји, задолжително мора да пријавите на граничната полиција дека патувате од таква земја и да започнете со период на домашна само-изолација во период од 14 дена. Доколку во моментов
-                            се наоѓате во некоја од наведените земји препорачуваме зголемени мерки на претпазливост во секое време, да се следат локалните медиуми и упатствата на локалните власти. Повеќе информации може да се добијат на travel.mfa.gov.mk.
+                            се наоѓате во некоја од наведените земји препорачуваме зголемени мерки на претпазливост во секое време, да се следат локалните медиуми и упатствата на локалните власти. 
                             <br>
                             <br> Доколку чувствувате исти или слични симптоми на грип, не посетувајте доктор, туку јавете се во центрите за јавно здравје.
                         </p>
@@ -161,10 +161,10 @@
                     <div class="content-wrapper">
                         <!--podatoci-->
                         <!--<div id="contentMK" class="contentMK"></div>
-    <div id="overview" class="overview_content"></div>
-    <div id="top5Today" class="top5Today"></div>
-    <div id="top5TodayDeath" class="top5TodayDeath"></div>
-    <div id="content" class="content"></div>-->
+                    <div id="overview" class="overview_content"></div>
+                    <div id="top5Today" class="top5Today"></div>
+                    <div id="top5TodayDeath" class="top5TodayDeath"></div>
+                    <div id="content" class="content"></div>-->
                         <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
 
 
@@ -172,7 +172,7 @@
                             <div class="card col-3">
                                 <img src="./images/macedonia.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <center><h5 class="card-title"> СТАТИСТИКА ВО МAКЕДОНИЈА</h5></center>
                                 </div>
                                 <div class="card-footer">
                                     <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
@@ -181,7 +181,7 @@
                             <div class="card col-3">
                                 <img src="./images/world-map-flags.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <center><h5 class="card-title">СТАТИСТИКА НА СЛУЧАИ ВО ДРУГИТЕ ДРЖАВИ</h5></center>
                                 </div>
                                 <div class="card-footer">
                                     <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
@@ -190,7 +190,7 @@
                             <div class="card col-3">
                                 <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <center><h5 class="card-title">ВКУПЕН БРОЈ НА СЛУЧАИ</h5></center>
                                 </div>
                                 <div class="card-footer">
                                     <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
@@ -202,7 +202,7 @@
                             <div class="card col-3">
                                 <img src="./images/top-5-done.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h1 class="card-title">Card title</h1>
+                                    <center><h5 class="card-title">ПОСЛЕДНИ 5 СЛУЧАИ НИЗ СВЕТОТ</h5></center>
                                 </div>
                                 <div class="card-footer">
                                     <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
@@ -237,6 +237,18 @@
                 </div>
             </div>
         </div>
+        <div class="card" id="information_footer" style="opacity:0.3; border:none">
+            <div class="info_title_footer" id="info_title_footer">
+              ИНФОРМАЦИИ:
+            </div>
+            <div class="card-body" id="info_footer">
+                <blockquote class="blockquote mb-0">
+                    <p><a href="http://zdravstvo.gov.mk/korona-virus/" target="_blank">За повеќе информации посетете го овој линк.</a></p>
+                    <footer class="blockquote-footer"></cite></footer>
+                </blockquote>
+            </div>
+        </div>
+
     </div>
 
 
