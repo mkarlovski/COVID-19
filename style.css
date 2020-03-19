@@ -5,6 +5,7 @@
 }
 
 #header {
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +15,7 @@
 }
 
 #headerTitle {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
 }
