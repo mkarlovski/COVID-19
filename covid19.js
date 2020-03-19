@@ -38,15 +38,15 @@ var data2 = [];
         filterMK = data.filter(function(item) {
             return item.country === "North Macedonia"
         })
-        let contentHtml2 = '<div class="title"><h2>North Macedonia</h2></div>' +
+        let contentHtml2 = '<div class="title"><h2>Северна Македонија</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Country</th>' +
-            '<th class="title">Cases</th>' +
-            '<th class="title">Today Cases</th>' +
-            '<th class="title">Deaths</th>' +
-            '<th class="title">Today Deaths</th>' +
-            '<th class="title">Recovered</th>' +
-            '<th class="title">Critical</th>' +
+            '<th class="title">Земја</th>' +
+            '<th class="title">Случаи</th>' +
+            '<th class="title">Денешни случаи</th>' +
+            '<th class="title">Смртни случаи</th>' +
+            '<th class="title">Денешни смртни случаи</th>' +
+            '<th class="title">Вкупно излечени</th>' +
+            '<th class="title">Критични</th>' +
             '</tr></thead><tbody>';
 
         contentHtml2 += '<tr>' +
