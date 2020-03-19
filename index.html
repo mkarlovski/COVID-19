@@ -15,7 +15,7 @@
 <body>
 
 
-    <div id="header">
+    <div id="header" style=" position: relative;">
         <div id="headerTitle">COVID-19</div>
         <button id="aboutUs_btn" onclick="toggle(this.id)">За нас</button>
     </div>
@@ -43,6 +43,9 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" id="tab" data-toggle="tab" href="#Statistic" role="tab" aria-controls="Statistic" aria-selected="false">Статистика</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab" data-toggle="tab" href="#Concats" role="tab" aria-controls="Concats" aria-selected="false">Контакти</a>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent" onclick="checkPopUpsClick()">
@@ -160,10 +163,10 @@
                     <div class="content-wrapper">
                         <!--podatoci-->
                         <!--<div id="contentMK" class="contentMK"></div>
-                        <div id="overview" class="overview_content"></div>
-                        <div id="top5Today" class="top5Today"></div>
-                        <div id="top5TodayDeath" class="top5TodayDeath"></div>
-                        <div id="content" class="content"></div>-->
+                    <div id="overview" class="overview_content"></div>
+                    <div id="top5Today" class="top5Today"></div>
+                    <div id="top5TodayDeath" class="top5TodayDeath"></div>
+                    <div id="content" class="content"></div>-->
                         <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
 
 
@@ -229,31 +232,150 @@
                         </div>
 
                         <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="tab-pane fade" id="Concats" role="tabpanel" aria-labelledby="Concats">
+            <div class="container">
+                <div class="row" style="justify-content:space-around;">
+                    <div class="container">
+                        <div class="card-deck">
+                            <div class="card mb-4" style="        background: none;
+        border: none
+">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЗЈ Скопје</h4>
+                                    <p class="ContactsContect">071/289-614</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Битола</h4>
+                                    <p class="ContactsContect">071/261-330</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Велес</h4>
+                                    <p class="ContactsContect">071/219-278</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ПЕ Гевгелија</h4>
+                                    <p class="ContactsContect">078/545-444</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Кочани</h4>
+                                    <p class="ContactsContect">071/373-913</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Куманово</h4>
+                                    <p class="ContactsContect">070/215-851</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Охрид</h4>
+                                    <p class="ContactsContect">070/723-029</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Прилеп</h4>
+                                    <p class="ContactsContect">076/475-747</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Струмица</h4>
+                                    <p class="ContactsContect">072/235-543</p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Тетово</h4>
+                                    <p class="ContactsContect">075/240-464</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" style="justify-content:space-around;">
+                    <div class="container">
+                        <div class="card-deck">
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ПЕ Гостивар</h4>
+                                    <p class="ContactsContect">076/365-161</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЦЈЗ Штип</h4>
+                                    <p class="ContactsContect">078/365-613</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ИЈЗ Скопје</h4>
+                                    <p class="ContactsContect">078/387-194</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="background:none; border:none">
+                                <img class="card-img-top img-fluid" src="./images/phone-icon-2-256.png" alt="Card image cap" style="width:80%">
+                                <div class="card-body">
+                                    <h4 class="ContactsContect">ЗД Ало докторе</h4>
+                                    <p class="ContactsContect">02/15-123</p>
+                                </div>
+                            </div>
+                            <div class="card mb-4" style="background:none; border:none">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     <div class="card" id="information_footer" style="opacity:0.5; border:none; background:none">
         <div class="info_title_footer" id="info_title_footer">
             ИНФОРМАЦИИ:
         </div>
         <div class="card-body" id="info_footer">
             <blockquote class="blockquote mb-0">
-                <p><a href="http://zdravstvo.gov.mk/korona-virus/" target="_blank">За повеќе информации посетете го овој линк.</a></p>
+                <p>За повеќе информации<a href="http://zdravstvo.gov.mk/korona-virus/" target="_blank"> посетете го овој линк</a> или јавете се на некој од следните броеви:</p>
                 <footer class="blockquote-footer">
                 </footer>
             </blockquote>
