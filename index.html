@@ -17,7 +17,7 @@
 
     <div id="header">
         <div id="headerTitle">COVID-19</div>
-        <button id="aboutUs_btn" onclick="toggle(this.id)">За нас</button>
+        <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
     </div>
     <div id="A">
         <div id="AboutUs_content" class="w3-animate-zoom classname">
@@ -159,71 +159,81 @@
                 <div class="row">
                     <div class="content-wrapper">
                         <!--podatoci-->
-                        <!--<div id="contentMK" class="contentMK"></div>
-                        <div id="overview" class="overview_content"></div>
+                        <div id="contentMK" class="contentMK"></div>
+                        <!-- <div id="overview" class="overview_content"></div>
                         <div id="top5Today" class="top5Today"></div>
                         <div id="top5TodayDeath" class="top5TodayDeath"></div>
-                        <div id="content" class="content"></div>-->
+                        <div id="content" class="content"></div> -->
+
                         <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- <div id="MK_content">
+                            <p>
+                                " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+                            </p>
+                        </div> -->
 
-
-                        <div class="card-deck" style="margin:15px">
-                            <div class="card col-3">
-                                <img src="./images/macedonia.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                        <div class="card-deck " style="margin:15px ">
+                            <div class="card col-3 ">
+                                <img src="./images/macedonia.jpg " class="card-img-top " alt="... ">
+                                <div class="card-body ">
                                     <center>
-                                        <h5 class="card-title"> СТАТИСТИКА ВО МAКЕДОНИЈА</h5>
+                                        <h5 class="card-title "> СТАТИСТИКА ВО МAКЕДОНИЈА</h5>
                                     </center>
                                 </div>
-                                <div class="card-footer">
-                                    <button id="aboutUs_btn" onclick="toggleAboutUs()">ПРИКАЖИ</button>
+                                <div class="card-footer ">
+                                    <button id="showMK_btn" onclick="toggle(this.id) ">ПРИКАЖИ</button>
                                 </div>
                             </div>
-                            <div class="card col-3">
-                                <img src="./images/world-map-flags.png" class="card-img-top" alt="...">
-                                <div class="card-body">
+
+
+
+
+                            <div class="card col-3 ">
+                                <img src="./images/world-map-flags.png " class="card-img-top " alt="... ">
+                                <div class="card-body ">
                                     <center>
-                                        <h5 class="card-title">СТАТИСТИКА НА СЛУЧАИ ВО ДРУГИТЕ ДРЖАВИ</h5>
+                                        <h5 class="card-title ">СТАТИСТИКА НА СЛУЧАИ ВО ДРУГИТЕ ДРЖАВИ</h5>
                                     </center>
                                 </div>
-                                <div class="card-footer">
-                                    <button id="aboutUs_btn" onclick="toggleAboutUs()">ПРИКАЖИ</button>
+                                <div class="card-footer ">
+                                    <button id="allCountries_btn " onclick="showAllCountries() ">ПРИКАЖИ</button>
                                 </div>
                             </div>
-                            <div class="card col-3">
-                                <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                            <div class="card col-3 ">
+                                <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg " class="card-img-top " alt="... ">
+                                <div class="card-body ">
                                     <center>
-                                        <h5 class="card-title">ВКУПЕН БРОЈ НА СЛУЧАИ</h5>
+                                        <h5 class="card-title ">ВКУПЕН БРОЈ НА СЛУЧАИ</h5>
                                     </center>
                                 </div>
-                                <div class="card-footer">
-                                    <button id="aboutUs_btn" onclick="toggleAboutUs()">ПРИКАЖИ</button>
+                                <div class="card-footer ">
+                                    <button id="overview_btn " onclick="ShowOverview() ">ПРИКАЖИ</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card-deck">
-                            <div class="card col-3">
-                                <img src="./images/today-img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                        <div class="card-deck ">
+                            <div class="card col-3 ">
+                                <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
+                                <div class="card-body ">
                                     <center>
-                                        <h5 class="card-title">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
+                                        <h5 class="card-title ">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
                                     </center>
                                 </div>
-                                <div class="card-footer">
-                                    <button id="aboutUs_btn" onclick="toggleAboutUs()">ПРИКАЖИ</button>
+                                <div class="card-footer ">
+                                    <button id="top5cases_btn " onclick="Show5Cases() ">ПРИКАЖИ</button>
                                 </div>
                             </div>
-                            <div class="card  col-3">
-                                <img src="./images/today-img1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
+                            <div class="card col-3 ">
+                                <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
+                                <div class="card-body ">
                                     <center>
-                                        <h5 class="card-title">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
+                                        <h5 class="card-title ">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
                                     </center>
                                 </div>
-                                <div class="card-footer">
-                                    <button id="aboutUs_btn" onclick="toggleAboutUs()">ПРИКАЖИ</button>
+                                <div class="card-footer ">
+                                    <button id="top5deaths_btn " onclick="Show5Deaths() ">ПРИКАЖИ</button>
                                 </div>
                             </div>
                         </div>
@@ -247,14 +257,14 @@
             </div>
         </div>
     </div>
-    <div class="card" id="information_footer" style="opacity:0.5; border:none; background:none">
-        <div class="info_title_footer" id="info_title_footer">
+    <div class="card " id="information_footer " style="opacity:0.5; border:none; background:none ">
+        <div class="info_title_footer " id="info_title_footer ">
             ИНФОРМАЦИИ:
         </div>
-        <div class="card-body" id="info_footer">
-            <blockquote class="blockquote mb-0">
-                <p><a href="http://zdravstvo.gov.mk/korona-virus/" target="_blank">За повеќе информации посетете го овој линк.</a></p>
-                <footer class="blockquote-footer">
+        <div class="card-body " id="info_footer ">
+            <blockquote class="blockquote mb-0 ">
+                <p><a href="http://zdravstvo.gov.mk/korona-virus/ " target="_blank ">За повеќе информации посетете го овој линк.</a></p>
+                <footer class="blockquote-footer ">
                 </footer>
             </blockquote>
         </div>
@@ -266,11 +276,11 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./covid19.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js "></script>
+    <script src="./covid19.js "></script>
 </body>
 
 </html>

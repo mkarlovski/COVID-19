@@ -145,35 +145,41 @@ var data2 = [];
 })();
 
 function checkPopUpsClick() {
-    // hideAboutUs();
-    hideAll();
+    hideAboutUs();
+    // hideAll();
 }
 
-function toggle(buttonId) {
-    switch (buttonId) {
-        case "aboutUs_btn":
-            toggleAboutUs();
-            break;
+// function toggle(buttonId) {
+//     switch (buttonId) {
 
-            //case "cardWorld_btn":
-            //    toggleCardTitle();
-            //    break;
-            //case "cardTop5cases_btn":
-            //    break;
-            //case "cardTop5Deaths_btn":
-            //    break;
-            //case "cardMK_btn":
-            //    break:
-            //case "cardOverview_btn":
-            //    break;
+//         case "aboutUs_btn":
+//             toggleAboutUs();
+//             break;
+//         case "showMK_btn":
+//             toggleMK();
+//             break;
+//             // case "allCountries_btn":
+//             //     showAllCountries();
+//             //     break;
+//             // case "overview_btn":
+//             //     ShowOverview();
+//             //     break;
+//             // case "top5cases_btn":
+//             //     Show5Cases();
+//             //     break:
+//             // case "top5deaths_btn":
+//             //     Show5Deaths();
+//             //     break;
 
 
-        default:
-            break;
-    }
-}
+//         default:
+//             break;
+//     }
+// }
 
 function toggleAboutUs() {
+    debugger;
+
     var x = document.getElementById("AboutUs_content");
     if (x.className.indexOf("w3-show") == -1) {
         showAboutUs();
@@ -182,22 +188,62 @@ function toggleAboutUs() {
     }
 }
 
+
 function showAboutUs() {
     var x = document.getElementById("AboutUs_content");
     x.className += " w3-show";
 }
+
 
 function hideAboutUs() {
     var x = document.getElementById("AboutUs_content");
     x.className = x.className.replace(" w3-show", "");
 }
 
-function hideAll() {
-    debugger;
-    var x = document.getElementsByClassName("classname");
-    for (let i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" w3-show", "");
+// function hideAll() {
+//     debugger;
+//     var x = document.getElementsByClassName("classname");
+//     for (let i = 0; i < x.length; i++) {
+//         x[i].className = x[i].className.replace(" w3-show", "");
 
+//     }
+// }
+
+
+
+
+
+function toggleTable(divID) {
+    var forms = document.getElementById(divID)
+    if (forms.style.display == "block") {
+        forms.style.display = "none";
+    } else {
+        forms.style.display = "block";
     }
-    // x.className = x.className.replace(" w3-show", "");
+};
+
+function toggle(buttonId) {
+    switch (buttonId) {
+
+
+        case "showMK_btn":
+            toggleTable("contentMK");
+            break;
+            // case "allCountries_btn":
+            //     showAllCountries();
+            //     break;
+            // case "overview_btn":
+            //     ShowOverview();
+            //     break;
+            // case "top5cases_btn":
+            //     Show5Cases();
+            //     break:
+            // case "top5deaths_btn":
+            //     Show5Deaths();
+            //     break;
+
+
+        default:
+            break;
+    }
 }

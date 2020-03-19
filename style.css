@@ -53,6 +53,10 @@ div.overview_content {
     margin: 0 auto;
 }
 
+#MK_content {
+    display: block;
+}
+
 #AboutCorona,
 #Symptoms,
 #Prevention,
@@ -100,6 +104,7 @@ th.title {
 p {
     text-align: justify;
 }
+
 body {
     background-image: url("./images/posledenpat.png");
     height: 100%;
@@ -107,8 +112,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#myTabContent {
-}
+
+#myTabContent {}
 
 
 /*CARDS-------------------------------------------------------------*/
@@ -149,4 +154,8 @@ body {
 #info_footer {
     justify-content: center;
     margin: 0 auto;
+}
+
+#contentMK {
+    display: none;
 }
