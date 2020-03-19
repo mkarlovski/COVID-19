@@ -25,6 +25,9 @@ div.overview_content {
     margin: 0 auto;
 }
 
+#A{
+    margin: 10px;
+}
 #aboutUs_btn {
     padding: 5px;
     border-radius: 5px;
@@ -41,27 +44,22 @@ div.overview_content {
     padding: 15px;
     text-shadow: 2px 2px 5px blue, 0 0 10px white;
     box-shadow: 10px 10px 5px grey;
-    margin-bottom: 30px;
     margin-top: 10px;
     display: none;
     width: 70%;
     margin: 0 auto;
 }
-#AboutCorona {
-    padding-top: 20px;
-}
-#Symptoms{
-    padding-top: 20px;
-}
-#symptomsImg{
-    padding-left: 130px;
-}
-#Prevention{
-    padding-top: 20px;
-}
+#AboutCorona,
+#Symptoms,
+#Prevention,
 #Suggestions{
     padding-top: 20px;
 }
+
+#symptomsImg{
+    padding-left: 130px;
+}
+
 div.title {
     text-align: center;
 }
@@ -77,12 +75,9 @@ th.title {
     background-color: cornflowerblue;
 }
 
-.nav-link {
-    color: black;
+.nav-link:hover {
+    text-shadow: 2px 2px 5px blue, 0 0 10px white;
 }
-    .nav-link:hover {
-        text-shadow: 2px 2px 5px blue, 0 0 10px white;
-    }
 
 
 .test {
@@ -118,13 +113,3 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/*#Statistic,
-#Prevention {
-    background-image: url("./images/22.png");
-}
-#Suggestions,
-#Symptoms,
-#AboutCorona {
-    background-image: url("./images/depositphotos_173023952-stock-photo-medical-background-healthcare-icon-medical.jpg");
-}*/
