@@ -225,7 +225,6 @@ function toggleTable(divID) {
 function toggle(buttonId) {
     switch (buttonId) {
 
-
         case "showMK_btn":
             toggleTable("contentMK");
             break;
@@ -241,8 +240,6 @@ function toggle(buttonId) {
             // case "top5deaths_btn":
             //     Show5Deaths();
             //     break;
-
-
         default:
             break;
     }
