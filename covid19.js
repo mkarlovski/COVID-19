@@ -145,7 +145,8 @@ var data2 = [];
 })();
 
 function checkPopUpsClick() {
-    hideAboutUs();
+    // hideAboutUs();
+    hideAll();
 }
 
 function toggle(buttonId) {
@@ -154,17 +155,17 @@ function toggle(buttonId) {
             toggleAboutUs();
             break;
 
-        //case "cardWorld_btn":
-        //    toggleCardTitle();
-        //    break;
-        //case "cardTop5cases_btn":
-        //    break;
-        //case "cardTop5Deaths_btn":
-        //    break;
-        //case "cardMK_btn":
-        //    break:
-        //case "cardOverview_btn":
-        //    break;
+            //case "cardWorld_btn":
+            //    toggleCardTitle();
+            //    break;
+            //case "cardTop5cases_btn":
+            //    break;
+            //case "cardTop5Deaths_btn":
+            //    break;
+            //case "cardMK_btn":
+            //    break:
+            //case "cardOverview_btn":
+            //    break;
 
 
         default:
@@ -192,6 +193,11 @@ function hideAboutUs() {
 }
 
 function hideAll() {
-    var x = document.getElementByClassName("classname");
-    x.className = x.className.replace(" w3-show", "");
+    debugger;
+    var x = document.getElementsByClassName("classname");
+    for (let i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" w3-show", "");
+
+    }
+    // x.className = x.className.replace(" w3-show", "");
 }
