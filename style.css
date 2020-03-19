@@ -99,13 +99,14 @@ th.title {
 p {
     text-align: justify;
 }
-
-#myTabContent {
+body {
     background-image: url("./images/posledenpat.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#myTabContent {
 }
 
 
