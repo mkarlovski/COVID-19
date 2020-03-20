@@ -178,7 +178,7 @@ function checkPopUpsClick() {
 // }
 
 function toggleAboutUs() {
-    debugger;
+
 
     var x = document.getElementById("AboutUs_content");
     if (x.className.indexOf("w3-show") == -1) {
@@ -201,7 +201,7 @@ function hideAboutUs() {
 }
 
 // function hideAll() {
-//     debugger;
+//     
 //     var x = document.getElementsByClassName("classname");
 //     for (let i = 0; i < x.length; i++) {
 //         x[i].className = x[i].className.replace(" w3-show", "");
@@ -216,7 +216,6 @@ function hideAboutUs() {
 function toggleTable(divID) {
     var forms = document.getElementById(divID)
     if (forms.style.display == "block") {
-        wrapper.style.display == "none"
         forms.style.display = "none";
     } else {
         forms.style.display = "block";
@@ -226,6 +225,7 @@ function toggleTable(divID) {
 
 function toggle(buttonId) {
     switch (buttonId) {
+
         case "showMK_btn":
             toggleTable("wrapperMK");
             break;
