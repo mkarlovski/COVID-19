@@ -226,7 +226,6 @@ function toggleTable(divID) {
 
 function toggle(buttonId) {
     switch (buttonId) {
-
         case "showMK_btn":
             toggleTable("wrapperMK");
             break;
