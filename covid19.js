@@ -177,16 +177,16 @@ function checkPopUpsClick() {
 //     }
 // }
 
-function toggleAboutUs() {
+// function toggleAboutUs() {
 
 
-    var x = document.getElementById("AboutUs_content");
-    if (x.className.indexOf("w3-show") == -1) {
-        showAboutUs();
-    } else {
-        hideAboutUs();
-    }
-}
+//     var x = document.getElementById("AboutUs_content");
+//     if (x.className.indexOf("w3-show") == -1) {
+//         showAboutUs();
+//     } else {
+//         hideAboutUs();
+//     }
+// }
 
 
 function showAboutUs() {
@@ -256,6 +256,11 @@ function toggle(buttonId) {
         case "close5Deaths":
             toggleTable("wrapper5Deaths");
             break;
+        case "aboutUs_btn":
+            toggleTable("AboutUs_content");
+            break;
+        case "close-icon":
+            toggleTable("AboutUs_content");
         default:
             break;
     }

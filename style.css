@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 #header {
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    font-size: 12px;
+    width: 100%;
     height: 110px;
     display: flex;
     justify-content: space-between;
@@ -37,19 +41,32 @@ div.overview_content {
     background-color: black;
     opacity: 70;
 }
-
+#top-of-content6,
+#top-of-content5,
+#top-of-content4,
+#top-of-content3,
+#top-of-content2,
+#top-of-content{
+padding-top: 150px;
+}
 #myTab {
     color: gray;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+
 }
 
-#AboutUs_content {
+/* #AboutUs_content {
     padding: 15px;
     margin-top: 10px;
     display: none;
     width: 70%;
     margin: 0 auto;
     border: 2px solid black;
-}
+} */
 
 #MK_content {
     display: block;
@@ -161,7 +178,7 @@ body {
 #top5TodayDeath,
 #overview,
 #content, */
-
+#AboutUs_content,
 #wrapperMK,
 #wrapperOverview,
 #wrapper5Content,
@@ -169,7 +186,7 @@ body {
 #wrapper5Deaths {
     display: none;
 }
-
+#AboutUs_content,
 #wrapperMK,
 #wrapperOverview,
 #wrapper5Content,
@@ -180,7 +197,7 @@ body {
     left: 20%;
     width: 820px;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
     padding: 15px;
     height: 70%;
     border: solid black 2px;

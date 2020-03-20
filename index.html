@@ -15,12 +15,13 @@
 <body>
 
 
-    <div id="header" style=" position: relative;">
+    <div id="header">
         <div id="headerTitle">COVID-19</div>
-        <button id="aboutUs_btn" onclick="toggleAboutUs()">За нас</button>
+        <button id="aboutUs_btn" onclick="toggle(this.id)">За нас</button>
     </div>
     <div id="A">
         <div id="AboutUs_content" class="w3-animate-zoom classname">
+            <div id="close-icon"><img style="width:20px;height:20px" id="close-icon" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -54,7 +55,7 @@
     </ul>
     <div class="tab-content" id="myTabContent" onclick="checkPopUpsClick()">
         <div class="tab-pane fade " id="AboutCorona" role="tabpanel" aria-labelledby="AboutCorona">
-            <div class="container">
+            <div class="container" id="top-of-content5">
                 <div class="row">
                     <div class="col" style="border-left: solid black 2px; border-right: solid black 2px;">
                         <h5>Корона Вирус</h5>
@@ -76,7 +77,7 @@
             </div>
         </div>
         <div class="tab-pane fade" id="Symptoms" role="tabpanel" aria-labelledby="Symptoms">
-            <div class="container">
+            <div class="container" id="top-of-content4">
                 <div class="row">
                     <div class="col" style="border-left: solid black 2px; border-right: solid black 2px;">
                         <!--<h5>Симптоми</h5>-->
@@ -94,7 +95,7 @@
             </div>
         </div>
         <div class="tab-pane fade" id="Prevention" role="tabpanel" aria-labelledby="Prevention">
-            <div class="container">
+            <div class="container" id="top-of-content3">
                 <!--<h5>Превенција</h5>-->
 
                 <div class="row">
@@ -139,13 +140,14 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade " id="Suggestions" role="tabpanel" aria-labelledby="Suggestions">
-            <div class="container">
+        <div class="tab-pane fade " id="Suggestions" role="tabpanel"aria-labelledby="Suggestions">
+            <div class="container" id="top-of-content2">
                 <div class="row">
                     <div class="col" style="border-left: solid black 2px; border-right: solid black 2px;">
                         <!--<h5>Препораки</h5>-->
                         <p>
-                            <br /> Останете дома, освен во случај на итност. Доколку имате можност, работете од дома. Одделете се од останатите во различни простории. Редовно проветрувајте ги просториите. Доколку имате на располагање, користете посебен
+                            <br>
+                            Останете дома, освен во случај на итност. Доколку имате можност, работете од дома. Одделете се од останатите во различни простории. Редовно проветрувајте ги просториите. Доколку имате на располагање, користете посебен
                             тоалет/бања. Во спротивно редовно дезинфицирајте го оној кој сите го користат. Избегнувајте заедничко користење предмети за домаќинство како крпи за раце, постелнина, чаши, прибор за јадење. Доколку нарачувате храна/продукти
                             преку достава, друг член на домаќинството да ги превзема, избегнете контакт со доставувачот. Бидете на безбедно растојание со другите помеѓу 1 и 2 метри. Чистете ги површините во домот коишто најчесто ги користите. Следете
                             ги препораките за превенција од здравствените установи.
@@ -162,27 +164,27 @@
             </div>
         </div>
         <div class="tab-pane fade show active" id="Statistic" role="tabpanel" aria-labelledby="Statistic">
-            <div class="container">
+            <div class="container" id="test">
                 <div class="row">
                     <div class="content-wrapper">
                         <!--podatoci-->
-                        <div id="wrapperMK">
+                        <div id="wrapperMK" class="w3-animate-zoom classname">
                             <div id="close-icon"><img style="width:20px;height:20px" id="closeMK" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
                             <div id="contentMK" class="contentMK"></div>
                         </div>
-                        <div id="wrapperOverview">
+                        <div id="wrapperOverview" class="w3-animate-zoom classname">
                             <div id="close-icon"><img style="width:20px;height:20px" id="closeOverview" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
                             <div id="overview" class="overview_content"></div>
                         </div>
-                        <div id="wrapper5Today">
+                        <div id="wrapper5Today" class="w3-animate-zoom classname">
                             <div id="close-icon"><img style="width:20px;height:20px" id="close5Today" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
                             <div id="top5Today" class="top5Today"></div>
                         </div>
-                        <div id="wrapper5Deaths">
+                        <div id="wrapper5Deaths" class="w3-animate-zoom classname">
                             <div id="close-icon"><img style="width:20px;height:20px" id="close5Deaths" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
                             <div id="top5TodayDeath" class="top5TodayDeath"></div>
                         </div>
-                        <div id="wrapper5Content" style="overflow-x:auto;">
+                        <div id="wrapper5Content" class="w3-animate-zoom classname" style="overflow:auto; padding: 2px;">
                             <div id="close-icon"><img style="width:20px;height:20px" id="closeContent" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
                             <div id="content" class="content"></div>
                         </div>
@@ -197,7 +199,7 @@
                             </p>
                         </div> -->
 
-                    <div class="card-deck " style="margin:15px ">
+                    <div class="card-deck " style="margin:15px " id="top-of-content">
                         <div class="card col-3 ">
                             <img src="./images/macedonia.jpg " class="card-img-top " alt="... ">
                             <div class="card-body ">
@@ -268,7 +270,7 @@
             </div>
         </div>
         <div class="tab-pane fade" id="Concats" role="tabpanel" aria-labelledby="Concats">
-            <div class="container">
+            <div class="container"id="top-of-content6">
                 <div class="row" style="justify-content:space-around;">
                     <div class="container">
                         <div class="card-deck">
@@ -430,10 +432,6 @@
                 </blockquote>
             </div>
         </div>
-
-
-
-
 
 
 
