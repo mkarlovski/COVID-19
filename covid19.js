@@ -226,7 +226,7 @@ function toggle(buttonId) {
     switch (buttonId) {
 
         case "showMK_btn":
-            toggleTable("contentMK");
+            toggleTable("wrapper");
             break;
             // case "allCountries_btn":
             //     showAllCountries();

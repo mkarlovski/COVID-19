@@ -157,10 +157,24 @@ body {
     margin: 0 auto;
 }
 
-#contentMK,
+#wrapper,
 #top5Today,
 #top5TodayDeath,
 #overview,
 #content {
     display: none;
+}
+#wrapper {
+    background: #e1e1e1;
+    top: 20%;
+    left: 20%;
+    width: 820px;
+    position: fixed;
+    z-index: 1000;
+    padding: 15px;
+    height: 70%;
+    border:solid black 2px;
+}
+#close-icon {
+    float:right;
 }
