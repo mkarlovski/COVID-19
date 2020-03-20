@@ -11,13 +11,13 @@ var data2 = [];
         data = JSON.parse(response.data);
         let contentHtml = '<div class="title"><h2>Covid-19</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Country</th>' +
-            '<th class="title">Cases</th>' +
-            '<th class="title">Today Cases</th>' +
-            '<th class="title">Deaths</th>' +
-            '<th class="title">Today Deaths</th>' +
-            '<th class="title">Recovered</th>' +
-            '<th class="title">Critical</th>' +
+            '<th class="title">Држава</th>' +
+            '<th class="title">Случаи</th>' +
+            '<th class="title">Денешни случаи</th>' +
+            '<th class="title">Смртни случаи</th>' +
+            '<th class="title">Денешни смртни случаи</th>' +
+            '<th class="title">Вкупно излечени</th>' +
+            '<th class="title">Критични</th>' +
             '</tr></thead><tbody>';
         data.forEach(element => {
             contentHtml += '<tr>' +
@@ -40,7 +40,7 @@ var data2 = [];
         })
         let contentHtml2 = '<div class="title"><h2>Северна Македонија</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Земја</th>' +
+            '<th class="title">Држава</th>' +
             '<th class="title">Случаи</th>' +
             '<th class="title">Денешни случаи</th>' +
             '<th class="title">Смртни случаи</th>' +
@@ -71,8 +71,8 @@ var data2 = [];
 
         let contentHtml3 = '<div class="title"><h2>Top 5 Cases Today</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Country</th>' +
-            '<th class="title">Today Cases</th>' +
+            '<th class="title">Држава</th>' +
+            '<th class="title">Денешни случаи</th>' +
             '</tr></thead><tbody>';
         top5Today.forEach(element => {
             contentHtml3 += '<tr>' +
@@ -91,10 +91,10 @@ var data2 = [];
         });
         var top5TodayDeaths = todayDeathDesc.slice(0, 5);
 
-        let contentHtml4 = '<div class="title"><h2>Top 5 today deaths</h2></div>' +
+        let contentHtml4 = '<div class="title"><h2>Денешни смртни случаи</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Country</th>' +
-            '<th class="title">Today Deaths</th>' +
+            '<th class="title">Држава</th>' +
+            '<th class="title">Денешни смртни случаи</th>' +
             '</tr></thead><tbody>';
         top5TodayDeaths.forEach(element => {
             contentHtml4 += '<tr>' +
@@ -124,9 +124,9 @@ var data2 = [];
         data2 = JSON.parse(response.data);
         let contentHtml = '<div class="title"><h2>OVERVIEW</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Cases</th>' +
-            '<th class="title">Deaths</th>' +
-            '<th class="title">Recovered</th>' +
+            '<th class="title">Случаи</th>' +
+            '<th class="title">Смртни случаи</th>' +
+            '<th class="title">Вкупно излечени</th>' +
             '</tr></thead><tbody>';
 
         contentHtml += '<tr>' +
