@@ -89,8 +89,6 @@ th.title {
     background-color: cornflowerblue;
 }
 
-
-
 .test {
     margin: 0 auto;
     padding: 5%;
@@ -136,7 +134,8 @@ body {
     width: 100%;
     height: 50%;
 }
-#Concats{
+
+#Concats {
     margin-top: 20px;
 }
 
@@ -157,14 +156,25 @@ body {
     margin: 0 auto;
 }
 
-#wrapper,
-#top5Today,
+
+/* #top5Today,
 #top5TodayDeath,
 #overview,
-#content {
+#content, */
+
+#wrapperMK,
+#wrapperOverview,
+#wrapper5Content,
+#wrapper5Today,
+#wrapper5Deaths {
     display: none;
 }
-#wrapper {
+
+#wrapperMK,
+#wrapperOverview,
+#wrapper5Content,
+#wrapper5Today,
+#wrapper5Deaths {
     background: #e1e1e1;
     top: 20%;
     left: 20%;
@@ -173,9 +183,10 @@ body {
     z-index: 1000;
     padding: 15px;
     height: 70%;
-    border:solid black 2px;
+    border: solid black 2px;
 }
+
 #close-icon {
-    float:right;
+    float: right;
     cursor: pointer;
 }

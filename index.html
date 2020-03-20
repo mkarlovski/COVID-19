@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./fontawesome/css/all.css" type="text/css">
+
 </head>
 
 <body>
@@ -166,14 +166,26 @@
                 <div class="row">
                     <div class="content-wrapper">
                         <!--podatoci-->
-                        <div id="wrapper">
+                        <div id="wrapperMK">
                             <div id="close-icon"><img style="width:20px;height:20px" id="closeMK" onclick=toggle(this.id) src="./images/e52-512.png" /></div>
                             <div id="contentMK" class="contentMK"></div>
                         </div>
-                        <div id="overview" class="overview_content"></div>
-                        <div id="top5Today" class="top5Today"></div>
-                        <div id="top5TodayDeath" class="top5TodayDeath"></div>
-                        <div id="content" class="content"></div>
+                        <div id="wrapperOverview">
+                            <div id="close-icon"><img style="width:20px;height:20px" id="closeOverview" onclick=toggle(this.id) src="./images/e52-512.png" /></div>
+                            <div id="overview" class="overview_content"></div>
+                        </div>
+                        <div id="wrapper5Today">
+                            <div id="close-icon"><img style="width:20px;height:20px" id="close5Today" onclick=toggle(this.id) src="./images/e52-512.png" /></div>
+                            <div id="top5Today" class="top5Today"></div>
+                        </div>
+                        <div id="wrapper5Deaths">
+                            <div id="close-icon"><img style="width:20px;height:20px" id="close5Deaths" onclick=toggle(this.id) src="./images/e52-512.png" /></div>
+                            <div id="top5TodayDeath" class="top5TodayDeath"></div>
+                        </div>
+                        <div id="wrapper5Content">
+                            <div id="close-icon"><img style="width:20px;height:20px" id="closeContent" onclick=toggle(this.id) src="./images/e52-512.png" /></div>
+                            <div id="content" class="content"></div>
+                        </div>
                     </div>
                     <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
 
@@ -194,7 +206,7 @@
                                 </center>
                             </div>
                             <div class="card-footer ">
-                                <button id="showMK_btn" onclick="toggle(this.id) ">ПРИКАЖИ</button>
+                                <button id="showMK_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
                             </div>
                         </div>
 
@@ -208,44 +220,44 @@
                                     <h5 class="card-title ">СТАТИСТИКА НА СЛУЧАИ ВО ДРУГИТЕ ДРЖАВИ</h5>
                                 </center>
                             </div>
-                            <div class="card-footer ">
-                                <button id="allCountries_btn " onclick="showAllCountries() ">ПРИКАЖИ</button>
+                            <div class="card-footer">
+                                <button id="allCountries_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
                             </div>
                         </div>
                         <div class="card col-3 ">
                             <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg " class="card-img-top " alt="... ">
-                            <div class="card-body ">
+                            <div class="card-body">
                                 <center>
-                                    <h5 class="card-title ">ВКУПЕН БРОЈ НА СЛУЧАИ</h5>
+                                    <h5 class="card-title">ВКУПЕН БРОЈ НА СЛУЧАИ</h5>
                                 </center>
                             </div>
-                            <div class="card-footer ">
-                                <button id="overview_btn " onclick="ShowOverview() ">ПРИКАЖИ</button>
+                            <div class="card-footer">
+                                <button id="overview_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="card-deck ">
                         <div class="card col-3 ">
-                            <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
+                            <img src="./images/today-img1.jpg" class="card-img-top" alt="... ">
                             <div class="card-body ">
                                 <center>
-                                    <h5 class="card-title ">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
+                                    <h5 class="card-title">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
                                 </center>
                             </div>
                             <div class="card-footer ">
-                                <button id="top5cases_btn " onclick="Show5Cases() ">ПРИКАЖИ</button>
+                                <button id="top5cases_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
                             </div>
                         </div>
                         <div class="card col-3 ">
                             <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
-                            <div class="card-body ">
+                            <div class="card-body">
                                 <center>
-                                    <h5 class="card-title ">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
+                                    <h5 class="card-title">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
                                 </center>
                             </div>
-                            <div class="card-footer ">
-                                <button id="top5deaths_btn " onclick="Show5Deaths() ">ПРИКАЖИ</button>
+                            <div class="card-footer">
+                                <button id="top5deaths_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
                             </div>
                         </div>
                     </div>

@@ -216,33 +216,47 @@ function hideAboutUs() {
 function toggleTable(divID) {
     var forms = document.getElementById(divID)
     if (forms.style.display == "block") {
+        wrapper.style.display == "none"
         forms.style.display = "none";
     } else {
         forms.style.display = "block";
     }
 };
 
+
 function toggle(buttonId) {
     switch (buttonId) {
 
         case "showMK_btn":
-            toggleTable("wrapper");
+            toggleTable("wrapperMK");
             break;
         case "closeMK":
-            toggleTable("wrapper");
+            toggleTable("wrapperMK");
             break;
-            // case "allCountries_btn":
-            //     showAllCountries();
-            //     break;
-            // case "overview_btn":
-            //     ShowOverview();
-            //     break;
-            // case "top5cases_btn":
-            //     Show5Cases();
-            //     break:
-            // case "top5deaths_btn":
-            //     Show5Deaths();
-            //     break;
+        case "allCountries_btn":
+            toggleTable("wrapper5Content");
+            break;
+        case "closeContent":
+            toggleTable("wrapper5Content");
+            break;
+        case "overview_btn":
+            toggleTable("wrapperOverview");
+            break;
+        case "closeOverview":
+            toggleTable("wrapperOverview");
+            break;
+        case "top5cases_btn":
+            toggleTable("wrapper5Today");
+            break;
+        case "close5Today":
+            toggleTable("wrapper5Today");
+            break;
+        case "top5deaths_btn":
+            toggleTable("wrapper5Deaths");
+            break;
+        case "close5Deaths":
+            toggleTable("wrapper5Deaths");
+            break;
         default:
             break;
     }
