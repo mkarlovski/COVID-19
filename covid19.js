@@ -9,7 +9,7 @@ var data2 = [];
         }
     }).then(response => {
         data = JSON.parse(response.data);
-        let contentHtml = '<div class="title"><h2>Covid-19</h2></div>' +
+        let contentHtml = '<div class="title"><h2>Covid-19 \n Низ Светот</h2></div>' +
             '<table><thead><tr>' +
             '<th class="title">Држава</th>' +
             '<th class="title">Случаи</th>' +
