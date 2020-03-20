@@ -228,6 +228,9 @@ function toggle(buttonId) {
         case "showMK_btn":
             toggleTable("wrapper");
             break;
+        case "closeMK":
+            toggleTable("wrapper");
+            break;
             // case "allCountries_btn":
             //     showAllCountries();
             //     break;

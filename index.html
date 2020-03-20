@@ -31,7 +31,8 @@
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="tab" data-toggle="tab" href="#Statistic" role="tab" aria-controls="Statistic" aria-selected="true">Статистика</a>
-        </li><li class="nav-item">
+        </li>
+        <li class="nav-item">
             <a class="nav-link" id="tab" data-toggle="tab" href="#AboutCorona" role="tab" aria-controls="AboutCorona" aria-selected="false">Што е Корона?</a>
         </li>
         <li class="nav-item">
@@ -46,7 +47,7 @@
         <!-- <li class="nav-item">
             <a class="nav-link active" id="tab" data-toggle="tab" href="#AboutCorona" role="tab" aria-controls="AboutCorona" aria-selected="true">Што е Корона?</a>
         </li> -->
-        
+
         <li class="nav-item">
             <a class="nav-link" id="tab" data-toggle="tab" href="#Concats" role="tab" aria-controls="Concats" aria-selected="false">Контакти</a>
         </li>
@@ -166,7 +167,7 @@
                     <div class="content-wrapper">
                         <!--podatoci-->
                         <div id="wrapper">
-                            <div id="close-icon"><img style="width:20px;height:20px" src="./images/e52-512.png" /></div>
+                            <div id="close-icon"><img style="width:20px;height:20px" id="closeMK" onclick=toggle(this.id) src="./images/e52-512.png" /></div>
                             <div id="contentMK" class="contentMK"></div>
                         </div>
                         <div id="overview" class="overview_content"></div>
@@ -174,83 +175,83 @@
                         <div id="top5TodayDeath" class="top5TodayDeath"></div>
                         <div id="content" class="content"></div>
                     </div>
-                        <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
+                    <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
 
-                        <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
-                        <!-- <div id="MK_content">
+                    <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
+                    <!-- <div id="MK_content">
                             <p>
                                 " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
                             </p>
                         </div> -->
 
-                        <div class="card-deck " style="margin:15px ">
-                            <div class="card col-3 ">
-                                <img src="./images/macedonia.jpg " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <center>
-                                        <h5 class="card-title "> СТАТИСТИКА ВО МAКЕДОНИЈА</h5>
-                                    </center>
-                                </div>
-                                <div class="card-footer ">
-                                    <button id="showMK_btn" onclick="toggle(this.id) ">ПРИКАЖИ</button>
-                                </div>
+                    <div class="card-deck " style="margin:15px ">
+                        <div class="card col-3 ">
+                            <img src="./images/macedonia.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <center>
+                                    <h5 class="card-title "> СТАТИСТИКА ВО МAКЕДОНИЈА</h5>
+                                </center>
                             </div>
-
-
-
-
-                            <div class="card col-3 ">
-                                <img src="./images/world-map-flags.png " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <center>
-                                        <h5 class="card-title ">СТАТИСТИКА НА СЛУЧАИ ВО ДРУГИТЕ ДРЖАВИ</h5>
-                                    </center>
-                                </div>
-                                <div class="card-footer ">
-                                    <button id="allCountries_btn " onclick="showAllCountries() ">ПРИКАЖИ</button>
-                                </div>
-                            </div>
-                            <div class="card col-3 ">
-                                <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <center>
-                                        <h5 class="card-title ">ВКУПЕН БРОЈ НА СЛУЧАИ</h5>
-                                    </center>
-                                </div>
-                                <div class="card-footer ">
-                                    <button id="overview_btn " onclick="ShowOverview() ">ПРИКАЖИ</button>
-                                </div>
+                            <div class="card-footer ">
+                                <button id="showMK_btn" onclick="toggle(this.id) ">ПРИКАЖИ</button>
                             </div>
                         </div>
 
-                        <div class="card-deck ">
-                            <div class="card col-3 ">
-                                <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <center>
-                                        <h5 class="card-title ">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
-                                    </center>
-                                </div>
-                                <div class="card-footer ">
-                                    <button id="top5cases_btn " onclick="Show5Cases() ">ПРИКАЖИ</button>
-                                </div>
+
+
+
+                        <div class="card col-3 ">
+                            <img src="./images/world-map-flags.png " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <center>
+                                    <h5 class="card-title ">СТАТИСТИКА НА СЛУЧАИ ВО ДРУГИТЕ ДРЖАВИ</h5>
+                                </center>
                             </div>
-                            <div class="card col-3 ">
-                                <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
-                                <div class="card-body ">
-                                    <center>
-                                        <h5 class="card-title ">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
-                                    </center>
-                                </div>
-                                <div class="card-footer ">
-                                    <button id="top5deaths_btn " onclick="Show5Deaths() ">ПРИКАЖИ</button>
-                                </div>
+                            <div class="card-footer ">
+                                <button id="allCountries_btn " onclick="showAllCountries() ">ПРИКАЖИ</button>
                             </div>
                         </div>
+                        <div class="card col-3 ">
+                            <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <center>
+                                    <h5 class="card-title ">ВКУПЕН БРОЈ НА СЛУЧАИ</h5>
+                                </center>
+                            </div>
+                            <div class="card-footer ">
+                                <button id="overview_btn " onclick="ShowOverview() ">ПРИКАЖИ</button>
+                            </div>
+                        </div>
+                    </div>
 
-                        <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
-                   
+                    <div class="card-deck ">
+                        <div class="card col-3 ">
+                            <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <center>
+                                    <h5 class="card-title ">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
+                                </center>
+                            </div>
+                            <div class="card-footer ">
+                                <button id="top5cases_btn " onclick="Show5Cases() ">ПРИКАЖИ</button>
+                            </div>
+                        </div>
+                        <div class="card col-3 ">
+                            <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <center>
+                                    <h5 class="card-title ">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
+                                </center>
+                            </div>
+                            <div class="card-footer ">
+                                <button id="top5deaths_btn " onclick="Show5Deaths() ">ПРИКАЖИ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--test cards----------------------------------------------------------------------------------------------------------------------- -->
+
                 </div>
             </div>
         </div>
