@@ -69,7 +69,7 @@ var data2 = [];
         });
         var top5Today = todayCasesDesc.slice(0, 5);
 
-        let contentHtml3 = '<div class="title"><h2>Top 5 Cases Today</h2></div>' +
+        let contentHtml3 = '<div class="title"><h2>Држави со најголем број на заразеност денес</h2></div>' +
             '<table><thead><tr>' +
             '<th class="title">Држава</th>' +
             '<th class="title">Денешни случаи</th>' +
@@ -122,7 +122,7 @@ var data2 = [];
         }
     }).then(response => {
         data2 = JSON.parse(response.data);
-        let contentHtml = '<div class="title"><h2>OVERVIEW</h2></div>' +
+        let contentHtml = '<div class="title"><h2>Вкупен број на случаи низ светот</h2></div>' +
             '<table><thead><tr>' +
             '<th class="title">Случаи</th>' +
             '<th class="title">Смртни случаи</th>' +
