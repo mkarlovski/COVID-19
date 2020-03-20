@@ -177,4 +177,5 @@ body {
 }
 #close-icon {
     float:right;
+    cursor: pointer;
 }
