@@ -101,6 +101,7 @@ div.title {
 td.data,
 th.title {
     padding: 0px 10px;
+    padding-top: 10px;
     width: 10%;
     text-align: center;
 }
@@ -200,9 +201,9 @@ body {
 #wrapper5Content,
 #wrapper5Today,
 #wrapper5Deaths {
-    background: #e1e1e1;
+    background: white;
     top: 20%;
-    left: 20%;
+    left: 23%;
     width: 820px;
     position: fixed;
     z-index: 10000;
