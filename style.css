@@ -61,16 +61,6 @@ div.overview_content {
     width: 100%;
 }
 
-
-/* #AboutUs_content {
-    padding: 15px;
-    margin-top: 10px;
-    display: none;
-    width: 70%;
-    margin: 0 auto;
-    border: 2px solid black;
-} */
-
 #MK_content {
     display: block;
 }
@@ -179,12 +169,6 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
-
-
-/* #top5Today,
-#top5TodayDeath,
-#overview,
-#content, */
 
 #AboutUs_content,
 #wrapperMK,
