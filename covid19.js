@@ -34,7 +34,7 @@ var data2 = [];
 
         let content = document.getElementById('content');
         content.innerHTML = contentHtml;
-        // ----------   filter za MK--------------------------
+// ----------   filter za MK---------------------------------------------------------------------------------
         filterMK = data.filter(function(item) {
             return item.country === "North Macedonia"
         })
@@ -62,7 +62,7 @@ var data2 = [];
         contentHtml2 += '</tbody></table>';
         let contentMK = document.getElementById('contentMK');
         contentMK.innerHTML = contentHtml2;
-        //------TOP FIVE TODAY CASES
+//------TOP FIVE TODAY CASES-------------------------------------------------------------------------------------------
 
         var todayCasesDesc = data.sort(function(a, b) {
             return b.todayCases - a.todayCases;
@@ -84,7 +84,7 @@ var data2 = [];
 
         let contentTop5 = document.getElementById('top5Today');
         contentTop5.innerHTML = contentHtml3;
-        //-----TOP Five today deaths
+//-----TOP Five today deaths-----------------------------------------------------------
 
         var todayDeathDesc = data.sort(function(a, b) {
             return b.todayDeaths - a.todayDeaths;
@@ -144,24 +144,6 @@ var data2 = [];
     })
 })();
 
-function checkPopUpsClick() {
-    hideAboutUs();
-}
-
-
-
-function showAboutUs() {
-    var x = document.getElementById("AboutUs_content");
-    x.className += " w3-show";
-}
-
-
-function hideAboutUs() {
-    var x = document.getElementById("AboutUs_content");
-    x.className = x.className.replace(" w3-show", "");
-}
-
-
 function toggleTable(divID) {
     var forms = document.getElementById(divID)
     if (forms.style.display == "block") {
@@ -205,11 +187,6 @@ function toggle(buttonId) {
         case "close5Deaths":
             toggleTable("wrapper5Deaths");
             break;
-        case "aboutUs_btn":
-            toggleTable("AboutUs_content");
-            break;
-        case "close-icon":
-            toggleTable("AboutUs_content");
         default:
             break;
     }
