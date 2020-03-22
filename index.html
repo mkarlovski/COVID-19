@@ -151,105 +151,108 @@
                 <div class="row">
                     <div class="content-wrapper">
                         <div id="wrapperMK">
-                        <div class="w3-animate-zoom classname">
-                            <div id="close-icon"><img style="width:20px;height:20px" id="closeMK" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
-                            <div id="contentMK" class="contentMK"></div>
-                        </div>
+                            <div class="w3-animate-zoom classname">
+                                <div id="close-icon"><img style="width:20px;height:20px" id="closeMK" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
+                                <div id="contentMK" class="contentMK"></div>
+                            </div>
                         </div>
 
                         <div id="wrapperOverview">
-                        <div class="w3-animate-zoom classname">
-                            <div id="close-icon"><img style="width:20px;height:20px" id="closeOverview" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
-                            <div id="overview" class="overview_content"></div>
-                        </div>
+                            <div class="w3-animate-zoom classname">
+                                <div id="close-icon"><img style="width:20px;height:20px" id="closeOverview" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
+                                <div id="overview" class="overview_content"></div>
+                            </div>
                         </div>
 
                         <div id="wrapper5Today">
-                        <div class="w3-animate-zoom classname">
-                            <div id="close-icon"><img style="width:20px;height:20px" id="close5Today" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
-                            <div id="top5Today" class="top5Today"></div>
-                        </div>
+                            <div class="w3-animate-zoom classname">
+                                <div id="close-icon"><img style="width:20px;height:20px" id="close5Today" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
+                                <div id="top5Today" class="top5Today"></div>
+                            </div>
                         </div>
 
                         <div id="wrapper5Deaths">
-                        <div class="w3-animate-zoom classname">
-                            <div id="close-icon"><img style="width:20px;height:20px" id="close5Deaths" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
-                            <div id="top5TodayDeath" class="top5TodayDeath"></div>
-                        </div>
+                            <div class="w3-animate-zoom classname">
+                                <div id="close-icon"><img style="width:20px;height:20px" id="close5Deaths" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
+                                <div id="top5TodayDeath" class="top5TodayDeath"></div>
+                            </div>
                         </div>
 
 
                         <div id="wrapper5Content" style="overflow:auto; padding: 2px;">
-                            <div  class="w3-animate-zoom classname">
+                            <div class="w3-animate-zoom classname">
                                 <div id="close-icon"><img style="width:20px;height:20px" id="closeContent" onclick="toggle(this.id)" src="./images/e52-512.png" /></div>
                                 <div id="content" class="content"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-deck " style="margin:15px " id="top-of-content">
-                        <div class="card col-3 ">
-                            <img src="./images/macedonia.jpg " class="card-img-top " alt="... ">
-                            <div class="card-body ">
-                                <center>
-                                    <h5 class="card-title ">ВКУПЕН БРОЈ НА СЛУЧАИ ВО МАКЕДОНИЈА</h5>
-                                </center>
+                    <!--Test------------------------------------------------------------------------------------------------------------->
+                    <div class="container" id="top-of-content">
+                        <div class="row"style="justify-content:space-around">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card" style="border:solid black 1px; width:80%;height:90%">
+                                        <img src="./images/macedonia.jpg " class="card-img-top" alt="... ">
+                                        <div class="card-body">
+                                            <h5 class="card-title "style="height:60px">ВКУПЕН БРОЈ НА СЛУЧАИ ВО МАКЕДОНИЈА</h5>
+                                            <div class="card-footer">
+
+                                                <button id="showMK_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
+                                                </div>
+                                            </div>
+                                        </div>
                             </div>
-                            <div class="card-footer ">
-                                <button id="showMK_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card" style="border:solid black 1px; width:80%;height:90%">
+                                    <img src="./images/world-map-flags.png " class="card-img-top " alt="... ">
+                                    <div class="card-body">
+                                        <h5 class="card-title "style="height:60px">БРОЈ НА СЛУЧАИ ПО ДРЖАВА</h5>
+                                        <div class="card-footer">
+
+                                            <button id="allCountries_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
-                        </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card" style="border:solid black 1px;width:80%;height:90%">
+                                    <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg " class="card-img-top " alt="... ">
+                                    <div class="card-body">
+                                        <h5 class="card-title " style="height:60px">ВКУПЕН БРОЈ НА СЛУЧАИ НИЗ СВЕТОТ</h5>
+                                        <div class="card-footer">
+                                            <button id="overview_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card" style="border:solid black 1px;width:80%;height:90%">
+                                    <img src="./images/today-img1.jpg" class="card-img-top" alt="... ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
+                                        <div class="card-footer ">
+                                            <button id="top5cases_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card" style="border:solid black 1px;width:80%;height:90%">
+                                    <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
+                                        <div class="card-footer">
+                                            <button id="top5deaths_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-
-
-                        <div class="card col-3 ">
-                            <img src="./images/world-map-flags.png " class="card-img-top " alt="... ">
-                            <div class="card-body ">
-                                <center>
-                                    <h5 class="card-title ">БРОЈ НА СЛУЧАИ ПО ДРЖАВА</h5>
-                                </center>
-                            </div>
-                            <div class="card-footer">
-                                <button id="allCountries_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
-                            </div>
-                        </div>
-                        <div class="card col-3 ">
-                            <img src="./images/web3-planet-earth-space-nasa-space-stars-sun-shutterstock_526255060-shutterstock.jpg " class="card-img-top " alt="... ">
-                            <div class="card-body">
-                                <center>
-                                    <h5 class="card-title">ВКУПЕН БРОЈ НА СЛУЧАИ НИЗ СВЕТОТ</h5>
-                                </center>
-                            </div>
-                            <div class="card-footer">
-                                <button id="overview_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="card-deck ">
-                        <div class="card col-3 ">
-                            <img src="./images/today-img1.jpg" class="card-img-top" alt="... ">
-                            <div class="card-body ">
-                                <center>
-                                    <h5 class="card-title">ДРЖАВИ СО НАЈГОЛЕМ БРОЈ НА ЗАРАЗЕНОСТ ДЕНЕС</h5>
-                                </center>
-                            </div>
-                            <div class="card-footer ">
-                                <button id="top5cases_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
-                            </div>
-                        </div>
-                        <div class="card col-3 ">
-                            <img src="./images/today-img1.jpg " class="card-img-top " alt="... ">
-                            <div class="card-body">
-                                <center>
-                                    <h5 class="card-title">ДРЖАВИ СО НАЈМНОГУ СМРТНИ СЛУЧАИ ДЕНЕС</h5>
-                                </center>
-                            </div>
-                            <div class="card-footer">
-                                <button id="top5deaths_btn" onclick="toggle(this.id)">ПРИКАЖИ</button>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!--Test------------------------------------------------------------------------------------------------------------->
                 </div>
             </div>
         </div>
