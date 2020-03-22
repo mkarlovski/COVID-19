@@ -34,13 +34,13 @@ var data2 = [];
 
         let content = document.getElementById('content');
         content.innerHTML = contentHtml;
-// ----------   filter za MK---------------------------------------------------------------------------------
+        // ----------   filter za MK---------------------------------------------------------------------------------
         filterMK = data.filter(function(item) {
             return item.country === "North Macedonia"
         })
         let contentHtml2 = '<div class="title"><h2>Северна Македонија</h2></div>' +
             '<table><thead><tr>' +
-            '<th class="title">Држава</th>' +
+            // '<th class="title">Држава</th>' +
             '<th class="title">Случаи</th>' +
             '<th class="title">Денешни случаи</th>' +
             '<th class="title">Смртни случаи</th>' +
@@ -50,7 +50,7 @@ var data2 = [];
             '</tr></thead><tbody>';
 
         contentHtml2 += '<tr>' +
-            '<td class="data">' + filterMK[0].country + '</td>' +
+            // '<td class="data">' + filterMK[0].country + '</td>' +
             '<td class="data">' + filterMK[0].cases + '</td>' +
             '<td class="data">' + filterMK[0].todayCases + '</td>' +
             '<td class="data">' + filterMK[0].deaths + '</td>' +
@@ -62,7 +62,7 @@ var data2 = [];
         contentHtml2 += '</tbody></table>';
         let contentMK = document.getElementById('contentMK');
         contentMK.innerHTML = contentHtml2;
-//------TOP FIVE TODAY CASES-------------------------------------------------------------------------------------------
+        //------TOP FIVE TODAY CASES-------------------------------------------------------------------------------------------
 
         var todayCasesDesc = data.sort(function(a, b) {
             return b.todayCases - a.todayCases;
@@ -84,7 +84,7 @@ var data2 = [];
 
         let contentTop5 = document.getElementById('top5Today');
         contentTop5.innerHTML = contentHtml3;
-//-----TOP Five today deaths-----------------------------------------------------------
+        //-----TOP Five today deaths-----------------------------------------------------------
 
         var todayDeathDesc = data.sort(function(a, b) {
             return b.todayDeaths - a.todayDeaths;
