@@ -64,7 +64,7 @@ div.overview_content {
 #MK_content {
     display: block;
 }
-
+#Contacts,
 #AboutCorona,
 #Symptoms,
 #Prevention,
@@ -216,4 +216,16 @@ a {
 #footer {
     margin: 0 auto;
     justify-content: center;
+}
+.card{
+    align-items:center;
+    background:none;
+    border: none;
+}
+.ContactsContect {
+    font-weight: 600;
+}
+.phone-icon {
+    width: 20%;
+    height: 15%
 }
