@@ -35,15 +35,26 @@ div.overview_content {
 #A {
     margin: 10px;
 }
-
-#aboutUs_btn {
-    padding: 5px;
+#top5deaths_btn,
+#top5cases_btn,
+#overview_btn,
+#allCountries_btn,
+#showMK_btn {
+    padding: 1px;
     border-radius: 5px;
-    color: white;
-    background-color: black;
     opacity: 70;
 }
-
+#top5deaths_btn:hover,
+#top5cases_btn:hover,
+#overview_btn:hover,
+#allCountries_btn:hover,
+#showMK_btn:hover {
+    padding: 1px;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(13, 22, 49),rgb(108, 191, 224));
+    opacity: 70;
+}
 #top-of-content6,
 #top-of-content5,
 #top-of-content4,
@@ -140,7 +151,8 @@ body {
 .card-footer {
     justify-content: center;
     margin: 0 auto;
-    background-color: white;
+    border: none;
+    background: none;
 }
 
 .card-img-top {
