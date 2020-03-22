@@ -34,6 +34,7 @@
     border-radius: 5px;
     opacity: 70;
 }
+
 #top5deaths_btn:hover,
 #top5cases_btn:hover,
 #overview_btn:hover,
@@ -42,9 +43,10 @@
     padding: 1px;
     border-radius: 5px;
     color: white;
-    background-image: linear-gradient(to right, rgb(13, 22, 49),rgb(108, 191, 224));
+    background-image: linear-gradient(to right, rgb(13, 22, 49), rgb(108, 191, 224));
     opacity: 70;
 }
+
 #top-of-content6,
 #top-of-content5,
 #top-of-content4,
@@ -81,6 +83,9 @@
 
 #symptomsImg {
     padding-left: 130px;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 80px;
 }
 
 div.title {
@@ -91,7 +96,7 @@ td.data,
 th.title {
     padding: 0px 10px;
     padding-top: 10px;
-    width: 5%;
+    width: 3%;
     text-align: center;
 }
 
@@ -155,7 +160,7 @@ body {
 
 #information_footer {
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 60px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -231,6 +236,14 @@ body {
     height: 50%;
 }
 
+.card-title60 {
+    height: 60px;
+}
+
+.CA-Logo {
+    width: 20%;
+}
+
 @media only screen and (max-width: 700px) {
     #wrapper5Today,
     #wrapper5Deaths,
@@ -238,6 +251,28 @@ body {
         overflow: auto;
     }
 }
-.CA-Logo{
-    width: 20%;
+
+@media only screen and (max-width: 400px) {
+    td.data,
+    th.title {
+        font-size: x-small;
+        padding: 2px;
+    }
+    #wrapperMK,
+    #wrapperOverview,
+    #wrapper5Content,
+    #wrapper5Today,
+    #wrapper5Deaths {
+        width: 100%;
+        left: 0%;
+    }
+    .card-title {
+        height: fit-content;
+        font-size: 14px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .CA-Logo {
+        width: 70%;
+    }
 }
