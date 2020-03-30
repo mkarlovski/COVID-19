@@ -36,7 +36,7 @@ var data2 = [];
         content.innerHTML = contentHtml;
         // ----------   filter za MK---------------------------------------------------------------------------------
         filterMK = data.filter(function(item) {
-            return item.country === "Macedonia"
+            return item.country === "North Macedonia"
         })
         let contentHtml2 = '<div class="title"><h2>Северна Македонија</h2></div>' +
             '<table><thead><tr>' +
